@@ -26,7 +26,9 @@ pipeline {
                // deploy adapters: [tomcat9(credentialsId: 'tomcatserverdetails1', path: '', url: 'http://192.168.0.118:8080')], contextPath: '/app', war: '**/*.war'
               // deploy adapters: [tomcat9(credentialsId: 'tomcat2', path: '', url: 'http://3.110.155.98:8080')], contextPath: '/app', war: '**/*.war'
             //deploy adapters: [tomcat9(credentialsId: '41b235eb-411c-47ff-adf6-b3a133bd16c9', path: '', url: 'http://3.6.93.25:8080')], contextPath: '/app', war: '**/*.war'
-            deploy adapters: [tomcat9(credentialsId: 'TomcatTestEnv', path: '', url: 'http://3.6.93.25:8080')], contextPath: '/app', war: '**/*.war'
+            //deploy adapters: [tomcat9(credentialsId: 'TomcatTestEnv', path: '', url: 'http://3.6.93.25:8080')], contextPath: '/app', war: '**/*.war'
+            
+deploy adapters: [tomcat9(credentialsId: 'tomcat2', path: '', url: 'http://65.2.4.99:8080')], contextPath: '/app', war: '**/*.war'
             }
             
         }
