@@ -38,8 +38,8 @@ deploy adapters: [tomcat9(credentialsId: 'tomcat2', path: '', url: 'http://65.2.
             
             steps{
                 // deploy on container -> plugin
-            // deploy adapters: [tomcat9(credentialsId: 'tomcatserverdetails1', path: '', url: 'http://52.66.208.45:8080')], contextPath: '/app', war: '**/*.war'
-                deploy adapters: [tomcat9(credentialsId: 'tomcatProd', path: '', url: 'http://52.66.208.45:8080')], contextPath: '/app', war: '**/*.war'
+                // deploy adapters: [tomcat9(credentialsId: 'tomcatProd', path: '', url: 'http://52.66.208.45:8080')], contextPath: '/app', war: '**/*.war'
+             deploy adapters: [tomcat9(credentialsId: '7000ba5e-cd7a-4a13-8416-16c8b1319b2a', path: '', url: 'http://13.234.238.173:8080')], contextPath: '/app', war: '**/*.war'   
                 echo "DEPLOY ON PROD"
             }
         }
