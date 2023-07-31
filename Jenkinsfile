@@ -26,7 +26,6 @@ pipeline {
                 //deploy adapters: [tomcat9(credentialsId: 'TomcatTestEnv', path: '', url: 'http://3.6.93.25:8080')], contextPath: '/app', war: '**/*.war'
             deploy adapters: [tomcat9(credentialsId: 'tomcat2', path: '', url: 'http://13.233.179.204:8080')], contextPath: '/app', war: '**/*.war'
                 
-deploy adapters: [tomcat9(credentialsId: 'tomcat2', path: '', url: 'http://65.2.4.99:8080')], contextPath: '/app', war: '**/*.war'
             }
             
         }
